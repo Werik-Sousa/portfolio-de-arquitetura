@@ -1,8 +1,12 @@
-var typed = new Typed(".input", {
-    strings: ["Arquitetura.", "Desing.", "Consultoria."],
-    typeSpeed:130,
-    backSpeed:80,
-    loop:true
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    new Typed(".input", {
+      strings: ["Arquitetura.", "Desing.", "Consultoria."],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
+  }, 300);  
 });
 
 let menu = document.querySelector('#menu-icon');
@@ -20,8 +24,15 @@ window.onscroll = () => {
 
 const header = document.querySelector("header");
 
-window.addEventListener("scroll", function(){
-    header.classList.toggle("sticky", this.window.scrollY > 120);
+let ticking = false;
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      header.classList.toggle("sticky", window.scrollY > 120);
+      ticking = false;
+    });
+    ticking = true;
+  }
 });
 
 // Obter o elemento modal

@@ -21,16 +21,16 @@
 
 <body>
     <header>
-
-        <a href="#home" class="logo"><img src="imagens/logo1.png"></a>
-
-        <ul class="menuLista">
-            <a href="#home">Home</a>
-            <a href="#about">Sobre Nós</a>
-            <a href="#services">Serviços</a>
-            <a href="#portfolio">Projetos</a>
-            <a href="#contact">Contato</a>
-        </ul>
+        <a href="#home" class="logo"><img src="imagens/logo1.png" alt="logo"></a>
+        <nav>
+            <ul class="menuLista">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
 
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
@@ -38,7 +38,7 @@
     <!--hero-->
     <section class="hero" id="home">
         <div class="hero-text">
-            <a href="#about" class="h-line" data-aos="fade-rigth" data-aos-duration="1400" data-aos-delay="200">
+            <a href="#about" class="h-line" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                 <i class="ri-pencil-ruler-line"></i>
                 <span>Welisson Silva</span>
             </a>
@@ -70,30 +70,31 @@
             <h2>Sobre Nós</h2>
         </div>
         <div class="about1">
-        <div class="about-img">
+            <div class="about-img">
 
-            <img src="imagens/about.jpg" alt="">
+                <img src="imagens/about.jpg" alt="imagem do welisson">
+            </div>
+            <div class="about-text" data-aos="zoom-in-up">
+                <h3>Welisson Silva</h3>
+                <p>
+                    Olá, sou Welisson Silva, arquiteto formado pela FMU
+                    (Faculdades Metropolitanas Unidas).
+                    Sou apaixonado por criar espaços que combinam funcionalidade,
+                    estética e inovação.<br></p>
+                <br>
+                <p> em projetos variados, desde residências até ambientes corporativos,
+                    sempre buscando transformar conceitos em realidades tangíveis que atendam aos desejos dos meus
+                    clientes.
+                    Além da arquitetura, também me especializo em design de interiores, aplicando tendências
+                    contemporâneas para criar ambientes únicos.
+                    Como consultor, ofereço orientações valiosas para garantir o sucesso de cada projeto.</p>
+                <br><br>
+                <p>Estou comprometido com a excelência e a inovação, sempre buscando superar as expectativas dos meus
+                    clientes.
+                    Se você deseja transformar seu espaço em algo especial,
+                    estou aqui para ajudar a tornar sua visão uma realidade.</p>
+            </div>
         </div>
-        <div class="about-text" data-aos="zoom-in-up"> 
-            <h3>Welisson Silva</h3>
-            <p>
-                Olá, sou Welisson Silva, arquiteto formado pela FMU
-                (Faculdades Metropolitanas Unidas).
-                Sou apaixonado por criar espaços que combinam funcionalidade,
-                estética e inovação.<br></p>
-            <br>
-            <p> em projetos variados, desde residências até ambientes corporativos,
-                sempre buscando transformar conceitos em realidades tangíveis que atendam aos desejos dos meus clientes.
-                Além da arquitetura, também me especializo em design de interiores, aplicando tendências
-                contemporâneas para criar ambientes únicos.
-                Como consultor, ofereço orientações valiosas para garantir o sucesso de cada projeto.</p>
-            <br><br>
-            <p>Estou comprometido com a excelência e a inovação, sempre buscando superar as expectativas dos meus
-                clientes.
-                Se você deseja transformar seu espaço em algo especial,
-                estou aqui para ajudar a tornar sua visão uma realidade.</p>
-        </div>
-    </div>
     </section>
     <!---------------------------services----------------------->
 
@@ -127,7 +128,7 @@
                     escolhendo cores, móveis, iluminação e materiais.
                     Otimizo a disposição dos elementos para refletir o estilo e as
                     necessidades dos clientes, garantindo um ambiente confortável e inspirador.</p>
-                    <a href="#contact">
+                <a href="#contact">
                     Fale conosco
                     <i class='bx bx-chevron-right'></i>
                 </a>
@@ -142,7 +143,7 @@
                     recomendações e estratégias personalizadas para ajudar
                     clientes a alcançar seus objetivos de maneira eficiente,
                     atendendo às necessidades específicas de cada projeto.</p>
-                    <a href="#contact">
+                <a href="#contact">
                     Fale conosco
                     <i class='bx bx-chevron-right'></i>
                 </a>
@@ -206,71 +207,71 @@
                         <i class="ri-building-2-line"></i>
                     </div>
                 </div>
-                <h4>Escritorio de Desntista</h4>
+                <h4>Escritorio de Dentista</h4>
             </div>
         </div>
     </section>
 
     <!------------------- Modal Structure ----------------------->
-<div id="portfolioModal" class="modal">
-    <span class="close">&times;</span>
-    <div class="modal-content">
-        <div class="slider">
-            <div class="slider-content" data-index="0">
-                <div class="slides">
-                    <img src="imagens/comercial/recepcaoescradv2.png" class="slide-image">
-                    <img src="imagens/comercial/recepescritorioadv.png" class="slide-image">
-                    <img src="imagens/comercial/escritorioadv.png" class="slide-image">
-                    <img src="imagens/comercial/escritorioadv2.png" class="slide-image">
-                    <img src="imagens/comercial/visaoescritorioadv.png" class="slide-image">
-                    <video class="slide-video" controls>
-                        <source src="videos/escritorio.mp4" type="video/mp4">
-                        <source src="videos/escritorio.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+    <div id="portfolioModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <div class="slider">
+                <div class="slider-content" data-index="0">
+                    <div class="slides">
+                        <img src="imagens/comercial/recepcaoescradv2.png" class="slide-image">
+                        <img src="imagens/comercial/recepescritorioadv.png" class="slide-image">
+                        <img src="imagens/comercial/escritorioadv.png" class="slide-image">
+                        <img src="imagens/comercial/escritorioadv2.png" class="slide-image">
+                        <img src="imagens/comercial/visaoescritorioadv.png" class="slide-image">
+                        <video class="slide-video" controls>
+                            <source src="videos/escritorio.mp4" type="video/mp4">
+                            <source src="videos/escritorio.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-content" data-index="1">
-                <div class="slides">
-                    <img src="imagens/residencial/plantaQuartoNovo.jpg" class="slide-image">
-                    <img src="imagens/residencial/quartoNovo.png" class="slide-image">
-                    <img src="imagens/residencial/quartoNovo2.png" class="slide-image">
-                    <video class="slide-video" controls>
-                        <source src="videos/video-quarto-novo.mp4" type="video/mp4">
-                        <source src="videos/video-quarto-novo.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="slider-content" data-index="1">
+                    <div class="slides">
+                        <img src="imagens/residencial/plantaQuartoNovo.jpg" class="slide-image">
+                        <img src="imagens/residencial/quartoNovo.png" class="slide-image">
+                        <img src="imagens/residencial/quartoNovo2.png" class="slide-image">
+                        <video class="slide-video" controls>
+                            <source src="videos/video-quarto-novo.mp4" type="video/mp4">
+                            <source src="videos/video-quarto-novo.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-content" data-index="2">
-                <div class="slides">
-                    <img src="imagens/comercial/hallEscritorioVerde.png" class="slide-image">
-                    <img src="imagens/comercial/escritorioverde.png" class="slide-image">
-                    <img src="imagens/comercial/escritorioVerde2.png" class="slide-image">
-                    <video class="slide-video" controls>
-                        <source src="videos/escritorio-Verde.mp4" type="video/mp4">
-                        <source src="videos/escritorio-Verde.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="slider-content" data-index="2">
+                    <div class="slides">
+                        <img src="imagens/comercial/hallEscritorioVerde.png" class="slide-image">
+                        <img src="imagens/comercial/escritorioverde.png" class="slide-image">
+                        <img src="imagens/comercial/escritorioVerde2.png" class="slide-image">
+                        <video class="slide-video" controls>
+                            <source src="videos/escritorio-Verde.mp4" type="video/mp4">
+                            <source src="videos/escritorio-Verde.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-            </div>
-            <div class="slider-content" data-index="3">
-                <div class="slides">
-                    <img src="imagens/comercial/dentista.jpg" class="slide-image">
-                    <img src="imagens/comercial/dentista1.jpg" class="slide-image">
-                    <video class="slide-video" controls>
-                        <source src="videos/consutorio-de-dentista1.mp4" type="video/mp4">
-                        <source src="videos/consutorio-de-dentista1.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="slider-content" data-index="3">
+                    <div class="slides">
+                        <img src="imagens/comercial/dentista.jpg" class="slide-image">
+                        <img src="imagens/comercial/dentista1.jpg" class="slide-image">
+                        <video class="slide-video" controls>
+                            <source src="videos/consutorio-de-dentista1.mp4" type="video/mp4">
+                            <source src="videos/consutorio-de-dentista1.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
+                <!-- Mais divs .slider-content aqui -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
             </div>
-            <!-- Mais divs .slider-content aqui -->
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
         </div>
     </div>
-</div>
 
 
 
@@ -279,17 +280,18 @@
         <div class="center-text">
             <h2>Contato</h2>
         </div>
-    
+
         <div class="contact-form">
             <form action="send_email.php" method="post">
                 <input type="text" name="name" placeholder="Nome completo" required>
                 <input type="email" name="email" placeholder="E-mail" required>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui!" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Escreva sua mensagem aqui!"
+                    required></textarea>
                 <input type="submit" name="" value="Enviar Mensagem" class="send-btn">
             </form>
         </div>
     </section>
-    
+
 
     <!---------------------------rodape----------------------->
 
